@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/dfbeeb5e8d.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-ul">
+
+        <li id = "navHome" class="nav-li current"><a href="#">Home</a></li>
+        <li id = "navAbout" class="nav-li"><a href="#about">About</a></li>
+        <li id = "navProjects" class="nav-li"><a href="#projects">Projects</a></li>
+        <li id = "navContact" class="nav-li"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="hero-image">
+        <div class="hero-text">
+        <h1 data-aos = "fade" data-aos-mirror = "false" data-aos-once = "true" data-aos-duration = "1000" id = "name" class="title">
+          Matthew Bean
+        </h1>
+        <h2 data-aos = "fade" data-aos-mirror = "false" data-aos-once = "true" data-aos-duration = "1000" data-aos-delay = "1000" data-aos-anchor = "#name" class="subtitle">
+          Front End Developer
+        </h2>
+      </div>
+      </div>
+      <section class="about">
+        <a id = "about" href="#" class="position"></a>
+        <div class="container">
+            <div data-aos = "fade-right" data-aos-mirror = "false" data-aos-once = "true" class="portrait">
+                <img class="picture" src="portrait.jpeg" alt="Photo" />
+            </div>
+            <div data-aos = "fade" data-aos-mirror = "false" data-aos-once = "true" data-aos-duration="2000" class="bio">
+                <h2>About Me:</h2>
+                <p>
+                My name is Matthew Bean and I am an aspiring website developer who
+                is proficient in HTML, CSS, Javascript, and React, as well as
+                several other technologies commonly used on the internet. I am a
+                natural problem solver and I am confident that I can help you find
+                the solution to your technological needs.
+                </p>
+                <p>
+                I am currently practicing out of the greater Sacramento area in California.
+                Feel free to take a look below at technologies that I am proficient in as well
+                as a selection of projects that I have been working on.
+                </p>
+            </div>
+        </div>
+          <div data-aos = "fade-up" data-aos-mirror = "false" data-aos-once = "true" class="skills">
+            <h2 >Things that I am proficient in:</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Reactive Web Design</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Git</li>
+              <li>NPM</li>
+              <li>HTTP</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section">
+        <a id = "projects" href="#" class="position"></a>
+        <h2>Projects:</h2>
+        <div class="projects">
+          <div
+            class="project"
+            id = "carbTrak"
+            onMouseOver="showLink('project1-shown', 'project1-hidden' )"
+            onMouseOut="hideLink('project1-shown', 'project1-hidden' )"
+          >
+            <div class="shown" id="project1-shown">
+              <h3 class="title">CarbTrak</h3>
+              <p class="desc">
+                CarbTrak is a full stack application that allows users to track
+                their carbohydrate intake. It also graphs the user's intake
+                over time. It uses the MERN stack and uses authentication with
+                JSON web tokens.
+              </p>
+            </div>
+            <div class="hidden" id="project1-hidden">
+              <h3>Carb Counter</h3>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div
+            class="project"
+            onMouseOver="showLink('project2-shown', 'project2-hidden' )"
+            onMouseOut="hideLink('project2-shown', 'project2-hidden' )"
+          >
+            <div class="shown" id="project2-shown">
+              <h3 class="title">D&D Lookup</h3>
+              <p class="desc">
+                This is a React application that communicates  with a REST API to bring
+                the user a lightweight but powerful tool to look up rules and information about
+                the popular table top role playing game, Dungeons & Dragons.
+              </p>
+            </div>
+            <div class="hidden" id="project2-hidden">
+              <h3>D&D Lookup</h3>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div
+            class="project"
+            
+            onMouseOver="showLink('project3-shown', 'project3-hidden' )"
+            onMouseOut="hideLink('project3-shown', 'project3-hidden' )"
+          >
+            <div class="shown" id="project3-shown">
+              <h3 class="title">Imgur Reloaded</h3>
+              <p class="desc">
+                Imgur reloaded is a redesign of the popular image hosting site,
+                Imgur. This app brings the functionality of Imgur with a new
+                interface. It utalizes React and make API calls to the Imgur
+                backend.
+              </p>
+            </div>
+            <div class="hidden" id="project3-hidden">
+              <h3>Imgur Reloaded</h3>
+              <a href="#" class="project-link" target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <a id = "contact" href="#" class="position"></a>
+        <form data-aos = "fade" data-aos-mirror = "false" data-aos-once = "true" data-aos-duration = "1000" action="https://formspree.io/xwklropd" method="POST" class="form">
+          <h2 class="form-title">Contact me</h2>
+          <div class="option">
+            <label for name>Name:</label>
+            <input placeholder="John Smith" type="text" name="name" />
+          </div>
+          <div class="option">
+            <label for _replyto>Email:</label>
+            <input
+              placeholder="example@email.com"
+              type="email"
+              name="_replyto"
+            />
+          </div>
+          <div class="option">
+            <label for message>Message:</label>
+            <textarea
+              name="message"
+              rows="10"
+              cols="30"
+              placeholder="How can I help you today?"
+            ></textarea>
+          </div>
+          <div class="option">
+            <button class = "done" type="submit"><i class='fas fa-paper-plane'></i></button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <div>&#169; 2020 Matthew Bean</div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
